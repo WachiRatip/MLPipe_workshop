@@ -40,7 +40,7 @@ classifiers = [
     QuadraticDiscriminantAnalysis(),
 ]
 
-def train(path, standardize, cv):
+def train_cv(path, standardize, cv):
     if path == "mnist10k":
         X = pd.read_csv("./data/mnist10k/features.csv").values
         y = pd.read_csv("./data/mnist10k/label.csv").values.ravel()
